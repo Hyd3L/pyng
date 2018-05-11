@@ -15,7 +15,7 @@ from pygame.locals import * # required for QUIT constant
 WINDOW_WIDTH  = 1024
 WINDOW_HEIGHT = 555
 WINDOW_SIZE   = (WINDOW_WIDTH, WINDOW_HEIGHT)
-WINDOW_FPS    = 600
+WINDOW_FPS    = 400
 
 ## SOUNDS
 ## Sounds use "beep" command for Linux to emit a sound
@@ -38,7 +38,7 @@ PADDLE_SPRITE = (PADDLE_WIDTH, PADDLE_HEIGHT)
 PADDLE_ONE_X  = PADDLE_OFFSET - PADDLE_WIDTH/2
 PADDLE_TWO_X  = WINDOW_WIDTH - PADDLE_OFFSET - PADDLE_WIDTH/2
 PADDLE_INIT_Y = WINDOW_HEIGHT/2 - PADDLE_HEIGHT/2
-PADDLE_SPEED  = 1
+PADDLE_SPEED  =  600/WINDOW_FPS #Questo rende la velocità delle racchette costante anche cambiando gli fps
 
 ## BALL PARAMETERS
 BALL_SIZE   = WINDOW_WIDTH/70
